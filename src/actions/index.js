@@ -2,7 +2,7 @@ import { FETCH_PICSUM_DATA } from "./types";
 import axios from "axios";
 
 // const apiUrl = "https://api.github.com/users/KrunalLathiya";
-const picsumApiUrl = "https://picsum.photos/id/237/200/300";
+const picsumApiUrl = "https://picsum.photos/v2/list?limit=1";
 
 export const fetchData = data => {
   return {
@@ -10,19 +10,6 @@ export const fetchData = data => {
     data
   };
 };
-
-// export const fetchGithubData = () => {
-//   return dispatch => {
-//     return axios
-//       .get(apiUrl)
-//       .then(response => {
-//         dispatch(fetchData(response.data));
-//       })
-//       .catch(error => {
-//         throw error;
-//       });
-//   };
-// };
 
 export const fetchPicsumData = () => {
   return dispatch => {

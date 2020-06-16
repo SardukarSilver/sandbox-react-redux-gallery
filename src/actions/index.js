@@ -1,7 +1,7 @@
 import { FETCH_PICSUM_DATA } from "./types";
 import axios from "axios";
 
-const picsumApiUrl = "https://picsum.photos/v2/list?limit=1";
+const picsumApiUrl = "https://picsum.photos/v2/list?limit=10";
 
 export const fetchData = data => {
   return {

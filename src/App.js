@@ -1,15 +1,15 @@
 import React from "react";
-import { connect } from "react-redux";
+import { connect } from "react-redux"
+import GalleryComponent from "./components/GalleryComponent/GalleryComponent";
 
-import css from './App.css';
+import './App.css';
 
 const picsumData = ({ photosList }) => {
-  console.log(photosList[0])
-  let img = photosList.length > 0 ? photosList[0].download_url : null;
+  console.log(photosList)
 
   return (
-    <div>
-      <img className={css.imageTile} src={img} alt="test" />
+    <div className="container-fluid ">
+      <GalleryComponent photosList={photosList} />
     </div>
   );
 };

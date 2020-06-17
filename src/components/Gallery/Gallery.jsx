@@ -1,24 +1,27 @@
 import React from 'react';
 
-import './GalleryComponent.css';
+import './Gallery.css';
 
-const GalleryComponent = props => {
-    const { photosList } = props;
+const Gallery = ({photosList}) => {
+    
+
+    console.log(photosList);
+    
 
     return (
         <div className="row">
             {photosList && photosList.map((img, i) =>
-                <div className="col-md-4 col-12 col-image-small p-0">
+                <div className="col-md-4 col-12 col-image-small p-0 imageWrapper" key={img.id}>
                     <img
                         className="imageTile"
                         src={img.download_url}
                         alt={img.author}
-                        key={i}
                     />
+                    <div className="authorName">{img.author}</div>
                 </div>
             )}
         </div>
     )
 };
 
-export default GalleryComponent;
+export default Gallery;

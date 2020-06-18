@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SearchIcon from './SearchIcon'
 import './Search.css';
 
 const search = ({ handleChange }) => {
@@ -16,7 +16,7 @@ const search = ({ handleChange }) => {
                 />
                 <span class="input-group-append">
                     <div class="input-group-text bg-transparent">
-                        <i class="fa fa-search" />
+                        <SearchIcon />
                     </div>
                 </span>
             </div>

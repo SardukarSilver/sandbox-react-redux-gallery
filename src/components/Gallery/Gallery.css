@@ -1,5 +1,6 @@
 .imageWrapper {
     position: relative;
+    padding: 0 0 250px 0;
 }
 
 .imageWrapper::before {
@@ -18,18 +19,27 @@
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.4)
     );
+    z-index: 5;
 }
 
 .imageTile {
+    position: absolute;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    height: 300px;
+    left: 0;
+    top: 0;
 }
 
 .authorName {
     position: absolute;
-    right: 0;
     color: #ffffffe5;
-    margin: -30px 5px 0 0;;
+    bottom: 15px;
+    right: 15px;
+    z-index: 55;
     text-shadow: 0 1px 0 black
+}
+
+.galleryWrapper {
+    height: 93vh;
 }

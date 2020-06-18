@@ -1,0 +1,14 @@
+.rootClass {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rootClass .page-link:focus {
+    box-shadow: none;
+}
+
+.page-link {
+    color: grey;
+}
+

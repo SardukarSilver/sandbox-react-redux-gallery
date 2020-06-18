@@ -13,7 +13,7 @@ const Pagination = ({ imgPerPage, totalImgs, paginate }) => {
     return (
         <div className="rootClass">
             <nav>
-                {pageNumbers.length > 1 && 
+                {pageNumbers.length > 1 &&
                     <ul className="pagination m-2">
                         {pageNumbers.map(number => (
                             <li className="page-item" key={number}>

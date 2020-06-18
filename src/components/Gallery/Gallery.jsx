@@ -3,7 +3,7 @@ import Pagination from "../Pagination/Pagination";
 
 import './Gallery.css';
 
-const Gallery = ({photosList, imgPerPage, totalImgs, paginate}) => {
+const Gallery = ({ photosList, imgPerPage, totalImgs, paginate }) => {
 
     return (
         <div className="row galleryWrapper">
@@ -14,13 +14,13 @@ const Gallery = ({photosList, imgPerPage, totalImgs, paginate}) => {
                         src={img.download_url}
                         alt={img.author}
                     />
-                     <div className="authorName">{img.author}</div>
+                    <div className="authorName">{img.author}</div>
                 </div>
             )}
-            <Pagination 
-                imgPerPage={imgPerPage} 
-                totalImgs={totalImgs} 
-                paginate={paginate} 
+            <Pagination
+                imgPerPage={imgPerPage}
+                totalImgs={totalImgs}
+                paginate={paginate}
             />
         </div>
     )

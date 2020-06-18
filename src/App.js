@@ -41,12 +41,12 @@ const App = ({ photosList }) => {
   return (
     <div className="container-fluid">
       <Search handleChange={handleChange} />
-      <Gallery 
-        photosList={currentImages} 
-        imgPerPage={imgPerPage} 
-        totalImgs={filtered.length} 
+      <Gallery
+        photosList={currentImages}
+        imgPerPage={imgPerPage}
+        totalImgs={filtered.length}
         paginate={paginate}
-        />
+      />
     </div>
   );
 };
